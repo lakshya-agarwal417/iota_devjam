@@ -8,7 +8,7 @@ user_notes = st.text_area("Paste your study material here:", height=150)
 
 if st.button("Generate Summary"):
     if user_notes.strip():
-        with st.spinner("Processing with AI..."):
+        with st.spinner("Processing with AI..........."):
             result = generate_study_notes(user_notes)
             st.success("Here is your summary:")
             st.write(result)
